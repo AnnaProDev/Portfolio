@@ -9,9 +9,16 @@
 	}
 	&_subtitle{
 		position: relative;
-		@include before_circle;
 		padding-left: 10px;
 		z-index: 2;
+		@include before_circle;
+		&:before {
+			background-color: $first-color;
+		}
+		&_undl {
+			text-decoration: underline;
+		}
+ 
 	}
 	&_btns {
 		margin-top: 25px;

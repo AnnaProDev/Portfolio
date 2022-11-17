@@ -43,19 +43,27 @@ body {
 }
 //</NULL, COMMON PARAMETRS>========================================================================
 
-//<obolochka>===================================================================================
-@import "blocks/promo";
-@import "blocks/title";
-@import "blocks/button";
-@import "blocks/_sidepanel";
-@import "blocks/menu";
-//</obolochka>===================================================================================
 
 //<MAIN LAYOUT>=================================================================================
 .container {
 	max-width: 1150px;
 	margin: 0 auto;
 }
+
+.divider {
+	width: 60px;
+	height: 3px;
+	background-color: $main-color;
+	margin-top: 25px;
+}
 //<MAIN LAYOUT>=================================================================================
 
+//<obolochka>===================================================================================
+@import "blocks/promo";
+@import "blocks/title";
+@import "blocks/button";
+@import "blocks/_sidepanel";
+@import "blocks/menu";
+@import "blocks/about";
+//</obolochka>===================================================================================
 

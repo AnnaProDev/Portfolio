@@ -3,7 +3,7 @@
 	font-size: 36px;
 	line-height: 60px;
 	color: $first-color;
-	&_fz_14 {
+	&_fz14 {
 		font-size: 14px;
 		line-height: 21px;
 	}
@@ -14,8 +14,12 @@
 	}
 	&_fz16 {
 		font-size: 16px;
-		color: $second-color;
 		line-height: 21px;
+		color: #000;
+	}
+	&_fz36{
+		font-size: 36px;
+		color: $first-color;
 	}
 	&_fz48 {
 		font-size: 48px;
