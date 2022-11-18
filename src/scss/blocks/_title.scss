@@ -7,15 +7,18 @@
 		font-size: 14px;
 		line-height: 21px;
 	}
-	&_fz20 {
-		font-size: 20px;
-		color: $second-color;
-		line-height: 21px;
-	}
 	&_fz16 {
 		font-size: 16px;
 		line-height: 21px;
 		color: #000;
+	}
+	&_fz20 {
+		font-size: 20px;
+		line-height: 21px;
+		color: #000;
+		&_sc {
+			color: $second-color;
+		}
 	}
 	&_fz36{
 		font-size: 36px;
