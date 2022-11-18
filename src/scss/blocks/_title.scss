@@ -28,4 +28,18 @@
 		font-size: 48px;
 		color: $second-color;
 	}
+	&_section-title {
+		position: relative;
+		text-align: center;
+		@include before_circle;
+		&:before {
+			top: -6px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&_section-subtitle {
+		margin-top: 9px;
+		text-align: center;
+	}
 }
