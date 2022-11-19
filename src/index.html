@@ -431,21 +431,24 @@
 					<div class="title title_fz14 contacts_text">Or leave your contacts and I will write to you:</div>
 					<form action="" class="contacts_form">
 						<div class="contacts_input">
-							<input name="name" id="name" type="text">
+							<input required name="name" id="name" type="text">
 							<label for="name">Your name</label>
 						</div>
 						<div class="contacts_input">
-							<input name="email" id="email" type="email">
+							<input required name="email" id="email" type="email">
 							<label for="email">Your e-mail</label>
 						</div>
 						<div class="contacts_textarea">
 							<textarea name="text" id="text"></textarea>
 							<label for="text">Your massage</label>
 						</div>
-						<div>
-							<button class="contacts_btn btn">Send message</button>
-						</div>
-
+							<div class="contacts_triggers">
+								<button class="contacts_btn btn">Send message</button>
+								<div class="contacts_policy">
+									<input required type="checkbox" name="" id="">
+									<span>I agree with <a href="https://www.privacypolicies.com/live/762b5de8-8125-4a6d-81c2-c843c4f9ebc8">Privacy Policy</a></span>
+								</div>
+							</div>
 					</form>
 				</div>
 			</div>
