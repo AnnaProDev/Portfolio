@@ -33,9 +33,13 @@
 	}
 	&_link {
 		margin-right: 25px;
+		transition: all 0.6;
 		img {
 			max-width: 30px;
 			max-height: 30px;
+			&:hover {
+				scale: 1.10;
+			}
 		}
 	}
 	&_form {
@@ -63,12 +67,18 @@
 		column-gap: 35px;
 	}
 	&_policy {
+		position: relative;
 		font-size: 12px;
 		line-height: 14px;
 		display: flex;
 		align-items: center;
 		input {
 			margin-right: 10px;
+		}
+		#agree-error {
+			margin-top: 45px;
+			color: red;
+			width: 100%;
 		}
 	}
 	&_input {
@@ -80,7 +90,16 @@
 			padding: 0 20px;
 			font-size: 12px;
 		}
+		.error {
+			border: 1px solid red;
+		}
+		label.error{
+			margin-top: 57px;
+			border: none;
+			width: 100%;
+			color: red;
 
+		}
 	}
 	&_textarea {
 		position: relative;

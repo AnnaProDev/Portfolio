@@ -5,4 +5,16 @@
 	padding: 12px 25px;
 	color: $second-color;
 	font-size: 14px;
+	&:hover{
+		box-shadow: 3px 3px 20px $first-color;
+	}
+}
+
+@media (max-width: $md4) {
+	.btn {
+		&:hover{
+			box-shadow: unset;
+			cursor: none;
+		}
+	}
 }

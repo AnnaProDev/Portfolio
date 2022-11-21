@@ -199,6 +199,14 @@
 		&_form {
 			grid-template: 45px 190px 45px/ repeat(2, 215px);
 		}
+		label.error {
+			font-size: 11px;
+			line-height: 9px;
+		}
+		#agree-error {
+			font-size: 11px;
+			line-height: 11px;
+		}
 	}
 }
 
@@ -237,7 +245,7 @@
 		}
 	}
 	.promo {
-		background: url("../img/main-bg.png") no-repeat 47%/cover;
+		background: url("../img/main-bg.jpg") no-repeat 47%/cover;
 		&_btns {
 			margin-top: 30px;
 		}
@@ -291,6 +299,13 @@
 	}
 	.contacts {
 		padding-bottom: 50px;
+		&_link {
+			img {
+				&:hover {
+					scale: 1;
+				}
+			}
+		}
 		&_form {
 			grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
 		}
@@ -310,9 +325,14 @@
 			margin: 0 auto;
 		}
 		&_policy {
+			margin-bottom: 10px;
 			width: 180px;
 			margin: 0 auto;
 			line-height: 18px;
+		}
+		#agree-error {
+			margin-top: 27px;
+			text-align: center;
 		}
 	}
 }
