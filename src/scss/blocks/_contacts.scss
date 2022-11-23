@@ -37,6 +37,7 @@
 		img {
 			max-width: 30px;
 			max-height: 30px;
+			transition: all 0.6s;
 			&:hover {
 				scale: 1.10;
 			}

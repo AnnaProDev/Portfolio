@@ -92,16 +92,15 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		transition: all 0.6s;			
-			a {
-				transition: all 0.6s;
-				&:hover {
-				svg path {
+		transition: all 0.6s;
+		&-svg {
+			fill: $second-color;
+			transition: all 0.6s;
+			&:hover {
 					fill: $main-color;
 				}
-			}
+			}			
 		}
-	}
 	&_overlay {
 		position: fixed;
 		top: 0;

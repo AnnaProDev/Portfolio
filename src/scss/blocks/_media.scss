@@ -325,13 +325,13 @@
 			margin: 0 auto;
 		}
 		&_policy {
-			margin-bottom: 10px;
-			width: 180px;
-			margin: 0 auto;
+			width: 200px;
+			margin: 0 auto 10px auto;
 			line-height: 18px;
 		}
 		#agree-error {
-			margin-top: 27px;
+			position: absolute;
+			margin: 30px 10px 0 0;
 			text-align: center;
 		}
 	}

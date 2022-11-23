@@ -5,6 +5,7 @@
 	padding: 12px 25px;
 	color: $second-color;
 	font-size: 14px;
+	transition: all 0.6s;
 	&:hover{
 		box-shadow: 3px 3px 20px $first-color;
 	}
