@@ -114,4 +114,9 @@
 			font-size: 12px;
 		}
 	}
+	&_btn {
+		color: $first-color;
+		border: 2px solid $first-color;
+		background-color: white;
+	}
 }

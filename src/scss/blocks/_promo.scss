@@ -8,21 +8,23 @@
 		margin-top: 10px;
 	}
 	&_subtitle{
+		margin-top: 10px;
 		position: relative;
 		padding-left: 10px;
 		z-index: 2;
+		span {
+			text-decoration: underline
+		}
 		@include before_circle;
 		&:before {
 			background-color: $first-color;
-		}
-		&_undl {
-			text-decoration: underline;
+			top: -10%;
 		}
 	}
 	&_btns {
 		margin-top: 25px;
 		display: flex;
-		width: 250px;
+		width: 300px;
 		align-items: center;
 		justify-content: space-between;
 	}

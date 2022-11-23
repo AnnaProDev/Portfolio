@@ -237,6 +237,11 @@
 		}
 		&_social {
 			width: 150px;
+			&-svg {
+				&:hover {
+					fill: $second-color;
+				}
+			}
 		}
 		&_link {
 			&:hover {

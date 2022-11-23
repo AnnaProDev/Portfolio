@@ -14,9 +14,10 @@
 	}
 	&_fz20 {
 		font-size: 20px;
-		line-height: 21px;
+		line-height: 24px;
 		color: #000;
 		&_sc {
+			line-height: 30px;
 			color: $second-color;
 		}
 	}
