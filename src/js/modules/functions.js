@@ -1,4 +1,4 @@
-// Проверка поддержки webp, добавление класса webp или no-webp для HTML
+// Verifying webp support, adding webp or no-webp class for HTML
 export function isWebp(){
 	//Проверка поддержки webp
 	function testWebP(callback) {
@@ -8,7 +8,7 @@ export function isWebp(){
 		};
 		webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
 		}
-		//Добавление класса _webp или no-webp для HTML
+		//Adding webp or no-webp class for HTML
 		testWebP(function (support) {
 		
 		if (support == true) {

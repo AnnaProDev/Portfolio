@@ -1,7 +1,11 @@
+// Verifying webp support, adding webp or no-webp class for HTML
 import * as flsFunctions from "./modules/functions.js";
-
 flsFunctions.isWebp();
+//Validation
+import {validateForms} from "./modules/validation.js";
+validateForms('#contact form');
 
+//Hamburger
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const closeElem = document.querySelector(".menu_close");
@@ -22,6 +26,7 @@ links.forEach((link) => {
 	});
 });
 
+//Rating counter
 const counters = document.querySelectorAll(".skills_ratings-counter");
 const lines = document.querySelectorAll(".skills_ratings-line span");
 
@@ -29,37 +34,7 @@ counters.forEach((item, i) => {
 	lines[i].style.width = item.innerHTML;
 });
 
-//Validation
-function validateForms(form){
-	$(form).validate({
-		rules: {
-				name: {
-					required: true,
-					minlength: 2
-				},
-				email: {
-					required: true,
-					email: true
-				},
-				agree: "required",
-		},
-		messages: {
-				name: {
-					required: "Please specify your name",
-					minlength: jQuery.validator.format("Enter {0} symbols!")
-				},
-				email: {
-				required: "We need your email address to contact you",
-				email: "Your email address must be in the format of name@domain.com"
-				},
-				agree: "Please accept our policy",
-		}
-	});
-};
-
-validateForms('#contact form');
-
-	//Smooth scroll and pageup
+//Smooth scroll and pageup
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 1600) {
 			$(".pageup").fadeIn();
@@ -78,4 +53,20 @@ validateForms('#contact form');
 			window.location.hash = hash;
 			});
 		} 
+	});
+
+	$("form").submit(function(e){
+		e.preventDefault();
+		if (!$(this).valid()) {
+			return;
+		}
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function(){
+			$(this).find("input").val("");
+			$("form").trigger("reset");
+		});
+		return false;
 	});
