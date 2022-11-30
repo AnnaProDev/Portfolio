@@ -36,9 +36,14 @@
 
 @media (max-width: $md4) {
 	.btn {
-		&:hover{
+		&:hover {
 			box-shadow: unset;
-			cursor: none;
+			cursor: auto;
+			background-color: transparent;
+			color: $second-color;
+		}
+		&:hover:after{
+			width: 0;
 		}
 	}
 }

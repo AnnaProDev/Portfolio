@@ -55,6 +55,7 @@ counters.forEach((item, i) => {
 		} 
 	});
 
+	//Mailer
 	$("form").submit(function(e){
 		e.preventDefault();
 		if (!$(this).valid()) {

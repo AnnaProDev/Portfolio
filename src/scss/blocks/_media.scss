@@ -328,6 +328,9 @@
 			order: 2;
 			max-width: 220px;
 			margin: 0 auto;
+			&:hover {
+				color: $first-color;
+			}
 		}
 		&_policy {
 			width: 200px;
