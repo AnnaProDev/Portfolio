@@ -45,6 +45,7 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "body-parser": "^1.20.1",
     "expree": "^2.0.3",
     "request": "^2.88.2"

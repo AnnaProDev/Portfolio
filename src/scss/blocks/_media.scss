@@ -42,17 +42,32 @@
 		}
 	}
 	.portfolio {
-		&_wrapper {
+		&_items {
 			grid-template-columns: repeat(auto-fit, 280px);
 			grid-auto-rows: 280px;
 			justify-content: space-around;
 			row-gap: 35px;
-			.horizontal, .vertical {
-				grid-row: unset;
-				grid-column: unset;
+			}
+		.horizontal {
+			grid-row: unset;
+			grid-column: unset;
+		} 
+		.vertical {
+			grid-row: unset;
+			grid-column: unset;
+		}
+		&_item {
+			&:hover {
+				transform: none;
+			}
+			&_info{
+				visibility: visible;
+				opacity: 1;
 			}
 		}
-	}
+
+		}
+
 	.contacts {
 		&_wrapper {
 			padding: 0;

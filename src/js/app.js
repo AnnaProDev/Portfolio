@@ -1,3 +1,4 @@
+
 // Verifying webp support, adding webp or no-webp class for HTML
 import * as flsFunctions from "./modules/functions.js";
 flsFunctions.isWebp();
@@ -71,3 +72,12 @@ counters.forEach((item, i) => {
 		});
 		return false;
 	});
+
+	//Appearance of the description for portfolio
+
+		$(".portfolio_item").each(function(i){
+			$(this).hover(function(e) {
+				e.preventDefault();
+				$(".portfolio_item_info").eq(i).toggleClass("portfolio_item_info_active");
+			})
+		});
