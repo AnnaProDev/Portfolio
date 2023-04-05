@@ -318,7 +318,7 @@
 		}
 	}
 	.contacts {
-		padding-bottom: 50px;
+		padding: 50px 20px 20px;
 		&_link {
 			img {
 				&:hover {
@@ -356,6 +356,22 @@
 			position: absolute;
 			margin: 30px 10px 0 0;
 			text-align: center;
+		}
+	}
+
+	.pageup {
+		margin-right: 30px;
+	}
+	.popup {
+		&_content{
+			transform: perspective(600px) translate(-50%, 0%) rotateX(0deg);
+		}
+		&_subtitle{
+			@include before_circle;
+			&:before{
+				top: 30px;
+				left: 40px;
+			}
 		}
 	}
 }

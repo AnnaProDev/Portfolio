@@ -69,6 +69,7 @@ counters.forEach((item, i) => {
 		}).done(function(){
 			$(this).find("input").val("");
 			$("form").trigger("reset");
+			popupOpen();
 		});
 		return false;
 	});
@@ -81,3 +82,19 @@ counters.forEach((item, i) => {
 				$(".portfolio_item_info").eq(i).toggleClass("portfolio_item_info_active");
 			})
 		});
+
+	//Pop up
+	function popupOpen(){
+		const popup = document.querySelector('.popup');
+		const popupContent = document.querySelector('.popup_content');
+		const close = document.querySelector('.popup_close');
+		const body = document.querySelector('body');
+		popup.classList.add("open");
+		popupContent.classList.add("open_content");
+		body.classList.add("lock");
+		close.addEventListener('click', function() {
+			popup.classList.remove("open");
+			popupContent.classList.remove("open_content");
+			body.classList.remove("lock");
+		});
+	}
