@@ -59,6 +59,7 @@ counters.forEach((item, i) => {
 	//Mailer
 	$("form").submit(function(e){
 		e.preventDefault();
+		$(this).find(':button[type=submit]').prop('disabled', true);
 		if (!$(this).valid()) {
 			return;
 		}
